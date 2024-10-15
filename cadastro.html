@@ -1,90 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <Style>
-        form{
-            text-align: center;
-        }
+<html>
+    <head>
+        <title>formulario professora</title>
+        <meta charset="UTF-8">
+        <style>
+            p {margin: 10px 0;
+            }
 
-        p:{
-            margin: 10px 0;
-        }
+            form{
+                text-align: center;
+            }
 
-        body{
-            background: rgb(18, 7, 0);
-            font-family: monospace;
-            font-size: 16px;
-            color: blueviolet;
-        }
+            body{
+                background: gray;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+            }
 
-        h1{
-            text-align: center;
-            color: aliceblue;
-            font-size: 24px;
-        }
+            h1{
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+            }
 
-        button{
-            background-color: #ff8800;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 18px;
-            font-family: monospace;
-        }
+            button{
+                background-color: #4CAF50; /* Verde */;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="#URL" method="#">
+                <label for="nomeusuario">Usuário:</label>
+                <input name="nomeusuario" type="text" placeholder="Nome do Usuário"><br>
 
-        select{
-            font-family: monospace
-        } 
-        a{
-            color: white;
-        }
-        placeholder{
-            font-family: monospace
-        }
+                <label for="senhausuario">Senha:</label>
+                <input name="senhausuario" type="text" placeholder="Senha do Usuário" required><br>
 
-    </Style>
+                <label for="confirmesenha">Confirmação de senha:</label>
+                <input name="confirmesenha" type="text" placeholder="Senha do Usuário" ><br>
 
-</head>
-<body>
+                <label for="perfil">Perfil:</label>
+                <select>
+                    <option value="jogador">Jogador</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="professor">Professor</option>
+                </select><Br>
 
-    <Br>
-        
-    <h1>Login</h1>    
-
-    <Form>
-        <p>
-            <label for="nomedousuario">Nome:</label>
-            <input name="nomedousuario" type="text" placeholder="Nome Completo">
-        </p>
-        
-        <P>
-            <label for="emaildousuario">Seu Email:</label>
-            <input name="emaildousuario" type="email" placeholder="Email" required>
-        </P>
-
-        <p>
-            <label for="senha">Senha:</label>
-            <input name="senha" type="password" placeholder="Senha Do Usuário" required>
-        </p>
-
-        <p>
-            <label for="confirmesuasenha">Confirme sua Senha:</label>
-            <input name="confirmesuasenha" type="password" placeholder="Confirme Sua Senha" required>
-        </p>
-
-        <select name="perfil">
-            <option value="professor">Professor</option>
-            <option value="administrador">Administrador</option>
-            <option value="jogador">Jogador</option>
-        </select>
-
-        <br>
-        <br>
-
-        <button type="submit">Cadastrar</button><br><br>
-    </Form>
-</body>
+                <label><input name="manterlogado" type="checkbox" value="sim" /> Manter logado:</label><br>
+       
+                <button type="submit">Login</button><br>
+                <a href="#URL">Ainda não tem conta?</a><br>
+                <a href="#URL">Esqueceu a senha?</a>       
+        </form>
+    </body>
 </html>
