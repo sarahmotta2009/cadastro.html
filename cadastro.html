@@ -11,14 +11,14 @@
             }
 
             body{
-                background: gray;
+                background: rgb(253, 131, 237);
                 font-family: Arial, sans-serif;
                 font-size: 16px;
             }
 
             h1{
                 text-align: center;
-                color: #333;
+                color: #000000;
                 font-size: 24px;
             }
 
@@ -33,16 +33,17 @@
         </style>
     </head>
     <body>
-        <h1>Login</h1>
+        <h1>Cadastro</h1>
         <form action="#URL" method="#">
-                <label for="nomeusuario">Usuário:</label>
+
+                <label for="nomeusuario">Nome Completo:</label>
                 <input name="nomeusuario" type="text" placeholder="Nome do Usuário"><br>
 
                 <label for="senhausuario">Senha:</label>
                 <input name="senhausuario" type="text" placeholder="Senha do Usuário" required><br>
 
-                <label for="confirmesenha">Confirmação de senha:</label>
-                <input name="confirmesenha" type="text" placeholder="Senha do Usuário" ><br>
+                <label for="emailusuario">Email:</label>
+                <input name="emailusuario" type="email" placeholder="usuario12345@com.br" ><br>
 
                 <label for="perfil">Perfil:</label>
                 <select>
@@ -51,11 +52,7 @@
                     <option value="professor">Professor</option>
                 </select><Br>
 
-                <label><input name="manterlogado" type="checkbox" value="sim" /> Manter logado:</label><br>
-       
-                <button type="submit">Login</button><br>
-                <a href="#URL">Ainda não tem conta?</a><br>
-                <a href="#URL">Esqueceu a senha?</a>       
+                    <button type="submit">Cadastrar</button><br>
         </form>
     </body>
 </html>
